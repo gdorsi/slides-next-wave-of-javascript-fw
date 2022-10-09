@@ -1,9 +1,47 @@
 .solidjs-slides {
-    background: blue;
-    color: white
+  --tw-gradient-from: rgb(79 136 198 / 0.4);
+  --tw-gradient-to: rgb(68 107 158 / 0.9);
+  --two-columns-guttter: 20px;
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(68 107 158 / 0.8),
+    var(--tw-gradient-to);
+  color: white;
+}
+
+.two-columns .solidjs-slides header {
+  position: absolute;
+  left: 3.5rem;
+  top: 2.5rem;
+}
+
+.two-columns .solidjs-slides.col-left,
+.two-columns .solidjs-slides.col-right {
+  padding: 60px 0 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}
+
+.two-columns .solidjs-slides.col-left {
+  padding-right: calc(var(--two-columns-guttter) / 2);
+}
+
+.two-columns .solidjs-slides.col-right {
+  padding-left: calc(var(--two-columns-guttter) / 2);
+}
+
+.solidjs-bg1 {
+  background-image: linear-gradient(
+    to left,
+    var(--tw-gradient-stops)
+  ) !important;
 }
 
 .qwik-slides {
-    background: yellow;
-    color: black
+  background: yellow;
+  color: black;
+}
+
+.slidev-layout h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
 }
