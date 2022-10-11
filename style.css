@@ -1,3 +1,11 @@
+:root {
+  --solid-js-primary: #2c4f7c;
+  --solid-js-secondary: #335d92;
+  --solid-js-light: #446b9e;
+  --solid-js-accent-primary: #66e6ac;
+  --solid-js-accent-secondary: #0CDC73;
+}
+
 .solidjs-slides {
   --tw-gradient-from: rgb(79 136 198 / 0.4);
   --tw-gradient-to: rgb(68 107 158 / 0.9);

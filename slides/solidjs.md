@@ -1,4 +1,10 @@
 ---
+layout: cover
+---
+
+<img src="assets/solid-logo-full.svg"/>
+
+---
 layout: two-cols
 ---
 
