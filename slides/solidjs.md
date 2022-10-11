@@ -9,6 +9,56 @@ layout: two-cols
 ---
 
 <header>
+<h1>Render lists</h1>
+</header>
+
+## React
+
+```ts
+const palette = [
+  '#26547C', '#EF476F', '#FFD166', '#06D6A0'
+];
+
+function Palette({ palette }: { palette: string [] }) {
+  return (
+    <ul className="color-list">
+      {palette.map((color) => (
+        <li key={color} style={{ background: color }} />
+      ))}
+    </ul>
+  );
+}
+```
+
+[playground](https://stackblitz.com/edit/react-ts-7m7cen?file=index.tsx)
+
+::right::
+
+## Solid
+
+```ts
+const palette = [
+  '#26547C', '#EF476F', '#FFD166', '#06D6A0'
+];
+
+function Palette(props: { palette: string[] }) {
+  return (
+    <ul class="color-list">
+      <For each={props.palette}>
+        {(color) => <li style={{ background: color }} />}
+      </For>
+    </ul>
+  );
+}
+```
+
+[playground](https://stackblitz.com/edit/solidjs-templates-zqyzcv?file=src%2Findex.tsx)
+
+---
+layout: two-cols
+---
+
+<header>
 <h1>Run effect after on mount</h1>
 </header>
 
@@ -30,6 +80,8 @@ function Comp() {
    return <div>pink</div>;
 }
 ```
+
+[playground](https://stackblitz.com/edit/react-ts-h5vcsb?file=App.tsx)
 
 ::right::
 
@@ -61,7 +113,7 @@ layout: two-cols
 
 
 <header>
-<h1>Run callback after the component is unmounted</h1>
+<h1>Clean up after the component is unmounted</h1>
 </header>
 
 
@@ -80,6 +132,8 @@ function Comp() {
    return <div>pink</div>;
 }
 ```
+
+[playground](https://stackblitz.com/edit/react-ts-sibmkh?file=index.tsx)
 
 ::right::
 
