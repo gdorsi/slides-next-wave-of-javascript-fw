@@ -2,7 +2,7 @@
 layout: cover
 ---
 
-<img src="assets/solid-logo-full.svg"/>
+<img src="/assets/solid-logo-full.svg"/>
 
 ---
 layout: two-cols
@@ -152,3 +152,90 @@ function Comp() {
 ```
 
 [playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr1oQAwmrhQI9QlNnzFKuhraehZWVjL0EMy4aI68TgqEABQAlPxWvA7Oru6eiSm8ALwAfGkQGRnMjgFwAHRqtADmiSrM2R6EKsmWZVJdoT1CuExlADwiaABuRYQYANYj+uNT3ZL9lRBkfBEwDBC4AIKEXgWCwmKMeanFvCPxnLz6RVi8IrTM9PB7NQ1wuACirk+uAAQvgAJIiZpgKBHToAQj6ECsZF+ABUOHAGLhEttdgcjs8ACwABlJiLAkgAukA)
+
+---
+layout: two-cols
+---
+
+<header class="flex">
+<h1>Create new project | Vite template</h1>
+</header>
+
+<img style="width: 60%; margin: 2rem auto 0;" src="/assets/vite-logo-shadow.png" alt="vite logo" aria-hidden="true" />
+
+::right::
+
+<section style="padding: 2rem; ">
+```bash
+npx degit solidjs/templates/ts my-solid-app
+```
+
+<div style="padding-top: 2rem;" />
+
+## Guide
+
+- [List of available templates](https://github.com/solidjs/templates/blob/master/README.md#solid-templates-using-vite)
+- [Vite docs](https://vitejs.dev/)
+
+## Rendering
+
+- Client-side rendering - [solid-router](https://github.com/solidjs/solid-router).
+
+</section>
+
+---
+layout: two-cols
+---
+
+<header class="flex">
+<h1>Create new project | Astro</h1>
+</header>
+
+ <img style="margin: 5rem 1rem 0" src="/assets/astro-logo-dark.svg" alt="astro logo" />
+
+::right::
+
+<section style="padding: 2rem; ">
+
+## Rendering
+
+- [SSG - island architecture](https://docs.astro.build/en/concepts/islands)
+- [SSR - node app o Edge functions](https://docs.astro.build/en/guides/server-side-rendering/)
+
+## Guide
+
+- [Getting started](https://docs.astro.build/en/getting-started/)
+- [Integrate Solid](https://docs.astro.build/en/guides/integrations-guide/solid-js/)
+
+</section>
+
+---
+layout: two-cols
+---
+
+<header class="flex">
+<h1>Create new project | SolidStart</h1>
+</header>
+
+ <img style="margin: 2rem 0 0" src="/assets/solid-bg-1.svg" alt="solid logo" />
+
+::right::
+
+Meta-framework developed by the [SolidJS team](https://www.solidjs.com/contributors),
+powered by [vite](https://vitejs.dev/) and currently in **beta**.
+
+<section style="padding: 2rem; ">
+
+## Rendering
+
+- Client-side rendering (CSR)
+- Server-side rendering (SSR)
+- Streaming SSR
+- Static site generation (SSG)
+
+## Guides
+
+- [What's SolidStart](https://start.solidjs.com/getting-started/what-is-solidstart)
+- [Project setup](https://start.solidjs.com/getting-started/project-setup)
+
+</section>
