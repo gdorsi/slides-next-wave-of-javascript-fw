@@ -4,6 +4,54 @@ layout: cover
 
 <img src="/assets/solid-logo-full.svg"/>
 
+
+---
+layout: two-cols
+---
+
+<header>
+<h1>Conditional rendering</h1>
+</header>
+
+## React
+
+```ts
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const toggle = () => setIsLoggedIn((val) => !val);
+
+  return isLoggedIn ? (
+    <button onClick={toggle}>Log out</button>
+  ) : (
+    <button onClick={toggle}>Log in</button>
+  );
+}
+```
+
+[playground](https://stackblitz.com/edit/react-ts-rwam95?file=index.tsx)
+
+::right::
+
+## Solid
+
+```ts
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = createSignal(false);
+  const toggle = () => setIsLoggedIn((val) => !val);
+
+  return (
+    <Show 
+      when={isLoggedIn()} 
+      fallback={<button onClick={toggle}>Log in</button>}
+    >
+      <button onClick={toggle}>Log out</button>
+    </Show>
+  );
+}
+```
+
+[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqsvVwAtaQylZeUUVOg1tPQsrKxl6CGZcNFoIXgBBQkIACgBKfiteBzSyPmA1Wg8POBEASQhfMjhcABkqmvqIAF1eAF4HJxd3Lyg1HJkx5rzLdJKIMt5cDrU4ft58-oA+Xma2jtqGnJyANzGCvp2AQjO1Gbi5oVwmdJyi4t4AHgCg3kN-YR9ECVaqHCD5aSTNRqExQZgAayBnxM9Fwy3SaQAwhoEUDltVVpItu0PLwMJ99Ci0WktkT3h8vlT0bwsTjESB8R5CcSqizURSmTT6V99D9DFt3vcIJIHkJROJjhcdp8soRePotr4RLRmPR4BBcAA6Gq4ACiq31uAAQvg6iI3mAoNkVHkpWBJN0gA)
+
 ---
 layout: two-cols
 ---
