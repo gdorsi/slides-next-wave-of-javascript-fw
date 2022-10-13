@@ -105,9 +105,8 @@ function Palette(props: { palette: string[] }) {
 ---
 layout: two-cols
 ---
-
 <header>
-<h1>Run effect after on mount</h1>
+<h1>Run effect on mount</h1>
 </header>
 
 ## React
@@ -287,3 +286,23 @@ powered by [vite](https://vitejs.dev/) and currently in **beta**.
 - [Project setup](https://start.solidjs.com/getting-started/project-setup)
 
 </section>
+
+---
+layout: image-right
+image: https://unsplash.com/photos/m6aHfunTTsk/download?ixid=MnwxMjA3fDB8MXx0b3BpY3x8aVVJc25WdGpCMFl8fHx8fDJ8fDE2NjU2NzQ4Nzg&force=true&w=1920
+---
+
+## Resources
+
+- [SolidJS intro (100 Seconds)](https://www.youtube.com/watch?v=hw3Bx5vxKl0)
+- [SolidJS Tutorial](https://www.solidjs.com/tutorial/introduction_basics)
+- [API Reference](https://www.solidjs.com/docs/latest/api)
+- [Youtube channel](https://www.youtube.com/channel/UCXsRnrbzIX8KHdf86PE241Q)
+- [FAQ: Why doesn't my early return work in Solid?](https://www.youtube.com/watch?v=Ilf34WjMBkU)
+- [Benchmarks](https://krausest.github.io/js-framework-benchmark/index.html)
+
+## Community
+
+- [twitter](https://twitter.com/solid_js)
+- [discord](https://discord.com/invite/solidjs)
+- [github](https://github.com/solidjs/solid)
