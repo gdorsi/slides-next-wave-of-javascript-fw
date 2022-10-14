@@ -10,6 +10,53 @@ layout: two-cols
 ---
 
 <header>
+<h1>Component State</h1>
+</header>
+
+## React
+
+```ts
+import * as React from 'react';
+
+function Counter() {
+  const [count, setCount] = React.useState(0);
+
+  return (
+    <button style={btnStyle} type="button" onClick={() => setCount((n) => ++n)}>
+      {count}
+    </button>
+  );
+}
+```
+
+[playground](https://stackblitz.com/edit/react-ts-nrbhfx?file=index.tsx)
+
+::right::
+
+## Solid
+
+```ts
+import { createSignal } from "solid-js";
+
+function Counter() {
+  const [count, setCount] = createSignal(0);
+
+  return (
+    <button style={btnStyle} type="button" onClick={() => setCount((n) => ++n)}>
+      {count}
+    </button>
+  );
+}
+```
+
+[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqps+YpU6DW09CysrZloIMj4TXAhXAjU4XgBefiteZTAZKNwtMjQALzgVRGyAZiEYFSwrSUsIKxl6CGZcNCjeAGEGCBdGAAoASgyILMjovmBI1twsXjI4XF65gF00hycXdy8oNUGABmHGzMFlpnHBs6yAHhN6XFwumPxk1JA4hKS4aQJiVIqB5PKIqXhRboaZgAaw+IzSAD5FstVv1BoMIKNUkiANQ4zGSBE3LL8Wb9STE276YHPCBE8a8E71cIQISicTorFI26oga8fQIhYiWjMejwfoAOg8ywAoslxbgAEL4ACSImuYCghEIKmGTMwkjWQA)
+
+
+---
+layout: two-cols
+---
+
+<header>
 <h1>Conditional rendering</h1>
 </header>
 
