@@ -336,8 +336,15 @@ powered by [vite](https://vitejs.dev/) and currently in **beta**.
 
 ---
 layout: image-right
-image: https://unsplash.com/photos/m6aHfunTTsk/download?ixid=MnwxMjA3fDB8MXx0b3BpY3x8aVVJc25WdGpCMFl8fHx8fDJ8fDE2NjU2NzQ4Nzg&force=true&w=1920
+image: /assets/mahdi-bafande.jpg
 ---
+
+<style>
+  .solidjs-slides {
+  background-color: #0a1219; /* match picture background. */
+}
+
+</style>
 
 ## Resources
 
