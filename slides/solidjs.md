@@ -252,6 +252,15 @@ function Comp() {
 layout: two-cols
 ---
 
+<style>
+  .asterisk {
+    position: fixed;
+    left: 4rem;
+    bottom: 3rem;
+    z-index: 2;
+  }
+</style>
+
 <header class="flex">
 <h1>Create new project | Vite template</h1>
 </header>
@@ -275,8 +284,12 @@ npx degit solidjs/templates/ts my-solid-app
 ## Rendering
 
 - Client-side rendering - [solid-router](https://github.com/solidjs/solid-router).
-
+- [Server-side rendering \*](https://www.solidjs.com/guides/server) 
 </section>
+
+<div class="asterisk"> 
+<a href="https://vitejs.dev/guide/ssr.html#server-side-rendering" target="_blank">* some assembly required</a>
+</div>
 
 ---
 layout: two-cols
