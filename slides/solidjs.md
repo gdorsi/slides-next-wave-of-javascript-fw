@@ -64,7 +64,30 @@ layout: two-cols
 
 </div>
 
+---
+layout: center
+---
 
+# Solid component
+
+```typescript
+function Counter() {
+  const [count, setCount] = createSignal(0);
+
+  return (
+    <button 
+      type="button" 
+      onClick={() => setCount((n) => ++n)}
+    >
+      {count}
+    </button>
+  );
+}
+```
+
+A simple Solid component it's just a function that returns a [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+
+that runs **once** per instance, in other words, does not rerender. 
 ---
 
 <style>
