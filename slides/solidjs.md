@@ -4,20 +4,68 @@ layout: cover
 
 <img src="/assets/solid-logo-full.svg"/>
 
+--- 
+layout: two-cols
 ---
 
 <style>
-  .solid-click-list {
-    display: grid;
-    grid-template-rows: 1fr;
-    gap: 1rem;
-    font-size: 1.5rem;
-  }
+.solid-perf-img-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.solid-perf-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%
+}
 </style>
+
+<header>
+<h1>SolidJS is Performant</h1>
+</header>
+
+<div class="relative solid-perf-img-wrapper solid-js-bg2">
+  <img class="solid-perf-img" src="/assets/christian-englmeier-J7EUjSlNQtg-unsplash.jpg" logo="speed" aria-hidden="true" />
+</div>
+
+::right::
+<div class="solidjs-click-list">
+
+<v-click>
+
+- It's **just** [7.3KB min+gzip](https://bundlephobia.com/package/solid-js@1.5.1).
+
+</v-click>
+
+<v-click>
+
+- At the top of UI speed and memory utilization [benchmarks](https://krausest.github.io/js-framework-benchmark/index.html).
+
+</v-click>
+
+<v-click>
+
+- Blazing fast server-side rendering, based on string interpolation.
+
+</v-click>
+
+<v-click>
+
+- No Virtual Dom, [components render once](https://www.solidjs.com/guides/reactivity).
+
+</v-click>
+
+
+</div>
+
+
+---
 
 # Familiar api for React developers
 
-<div class="solid-click-list">
+<div class="solidjs-click-list">
 <v-click>
 
 - [useState](https://reactjs.org/docs/hooks-reference.html#usestate) <mdi-arrow-right /> [createSignal](https://www.solidjs.com/docs/latest/api#createsignal)
@@ -410,13 +458,6 @@ powered by [vite](https://vitejs.dev/) and currently in **beta**.
 layout: image-right
 image: /assets/mahdi-bafande.jpg
 ---
-
-<style>
-  .solidjs-slides {
-  background-color: #0a1219; /* match picture background. */
-}
-
-</style>
 
 ## Resources
 

@@ -13,6 +13,7 @@
   --tw-gradient-stops: var(--tw-gradient-from), rgb(68 107 158 / 0.8),
     var(--tw-gradient-to);
   color: white;
+  background-color: #0a1219; /* match picture background. */
 }
 
 .two-columns .solidjs-slides header {
@@ -42,6 +43,17 @@
     to left,
     var(--tw-gradient-stops)
   ) !important;
+}
+
+.solid-js-bg2 {
+  background: #010205 !important;
+}
+
+.solidjs-click-list {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
 /* li dot */
