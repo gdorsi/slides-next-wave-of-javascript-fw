@@ -15,6 +15,7 @@ drawings:
   persist: false
 # use UnoCSS
 css: unocss
+colorSchema: dark
 ---
 
 # The new wave of Javascript frameworks
