@@ -45,7 +45,6 @@ layout: two-cols
 
 </div>
 
-
 ---
 
 # Familiar api for React developers
@@ -64,6 +63,84 @@ layout: two-cols
 </v-clicks>
 
 </div>
+
+
+---
+
+<style>
+  .react-recon-pos {
+    right: 3rem;
+    top: 12rem;
+  }
+  .react-recon-count {
+    right: 20rem;
+    top: 10.2rem;
+    font-size: 1.4rem;
+  }
+</style>
+
+<h1 class="absolute">React reconciliation</h1>
+
+<div class="relative" style="padding: 2.5rem 1rem 1rem">
+  <div class="absolute react-recon-count">
+    count: <s>7</s>=><strong>8</strong>
+  </div>
+  <pre><code class="absolute react-recon-pos">setCount(n => n + 1);</code></pre>
+ <img src="/assets/react-reconciliation.svg" alt="react reconciliation" />
+</div>
+
+---
+
+<style>
+  .react-recon-pos {
+    right: 3rem;
+    top: 12rem;
+  }
+
+  .react-recon-count {
+    right: 20rem;
+    top: 10.2rem;
+    font-size: 1.4rem;
+  }
+</style>
+
+<h1 class="absolute">SolidJS update</h1>
+<div class="relative" style="padding: 2.5rem 1rem 1rem">
+  <div class="absolute react-recon-count">
+    count: <s>7</s>=><strong>8</strong>
+  </div>
+  <pre><code class="absolute react-recon-pos">setCount(n => n + 1);</code></pre>
+ <img src="/assets/solidjs-update.svg" alt="react reconciliation" />
+</div>
+
+---
+
+# Fine-Grained reactivity
+
+```typescript
+function createSignal(value) {
+  const subscribers = new Set();
+
+  const read = () => {
+    const listener = getCurrentListener(); // component, createEffect etc...
+    if (listener) subscribers.add(listener);
+    return value;
+  };
+
+  const write = (nextValue) => {
+    value = nextValue;
+    for (const sub of subscribers) sub.run();
+  };
+
+  return [read, write];
+}
+```
+
+- subscribers are created with [createEffect](https://www.solidjs.com/docs/latest/api#createeffect), [createRenderEffect](https://www.solidjs.com/docs/latest/api#createrendereffect), createComponent etc...
+- observables are created with [createSignal](https://www.solidjs.com/docs/latest/api#createsignal), [createStore](https://www.solidjs.com/docs/latest/api#createstore), [createMemo](https://www.solidjs.com/docs/latest/api#creatememo) etc...
+
+[reactivity guide](https://www.solidjs.com/guides/reactivity)
+
 --- 
 layout: two-cols
 ---
