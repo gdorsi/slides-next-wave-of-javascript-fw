@@ -33,29 +33,14 @@ layout: two-cols
 ::right::
 <div class="solidjs-click-list">
 
-<v-click>
+<v-clicks>
 
 - It's **just** [7.3KB min+gzip](https://bundlephobia.com/package/solid-js@1.5.1).
-
-</v-click>
-
-<v-click>
-
 - At the top of UI speed and memory utilization [benchmarks](https://krausest.github.io/js-framework-benchmark/index.html).
-
-</v-click>
-
-<v-click>
-
 - Blazing fast server-side rendering, based on string interpolation.
-
-</v-click>
-
-<v-click>
-
 - No Virtual Dom, [components render once](https://www.solidjs.com/guides/reactivity).
 
-</v-click>
+</v-clicks>
 
 
 </div>
@@ -66,48 +51,17 @@ layout: two-cols
 # Familiar api for React developers
 
 <div class="solidjs-click-list">
-<v-click>
+<v-clicks>
 
 - [useState](https://reactjs.org/docs/hooks-reference.html#usestate) <mdi-arrow-right /> [createSignal](https://www.solidjs.com/docs/latest/api#createsignal)
-
-</v-click>
-
-<v-click>
-
 - [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) <mdi-arrow-right /> [createEffect](https://www.solidjs.com/docs/latest/api#createeffect)
-
-</v-click>
-
-<v-click>
-
 - [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) <mdi-arrow-right /> [createMemo](https://www.solidjs.com/docs/latest/api#creatememo)
-
-</v-click>
-
-<v-click>
-
 - [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) <mdi-arrow-right /> [useContext](https://www.solidjs.com/docs/latest/api#usecontext)
-
-</v-click>
-
-
-<v-click>
-
 - [&lt;Suspense /&gt;](https://reactjs.org/docs/react-api.html#reactsuspense) <mdi-arrow-right /> [&lt;Suspense /&gt;](https://www.solidjs.com/docs/latest/api#suspense)
-
-</v-click>
-
-<v-click>
-
 - [useQuery/useSwr](https://swr.vercel.app/) <mdi-arrow-right /> [createResource](https://www.solidjs.com/docs/latest/api#createresource)
-
-</v-click>
-
-<v-click>
-
 - [and much more...](https://www.solidjs.com/docs/latest/api)
 
-</v-click>
+</v-clicks>
 
 </div>
 --- 
