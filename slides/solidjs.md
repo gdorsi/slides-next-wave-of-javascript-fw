@@ -4,7 +4,6 @@ layout: cover
 
 <img src="/assets/solid-logo-full.svg"/>
 
-
 ---
 layout: two-cols
 ---
@@ -353,12 +352,12 @@ image: /assets/mahdi-bafande.jpg
 - [SolidJS intro (100 Seconds)](https://www.youtube.com/watch?v=hw3Bx5vxKl0)
 - [SolidJS Tutorial](https://www.solidjs.com/tutorial/introduction_basics)
 - [API Reference](https://www.solidjs.com/docs/latest/api)
-- [Youtube channel](https://www.youtube.com/channel/UCXsRnrbzIX8KHdf86PE241Q)
 - [FAQ: Why doesn't my early return work in Solid?](https://www.youtube.com/watch?v=Ilf34WjMBkU)
 - [Benchmarks](https://krausest.github.io/js-framework-benchmark/index.html)
 
 ## Community
 
-- [twitter](https://twitter.com/solid_js)
-- [discord](https://discord.com/invite/solidjs)
-- [github](https://github.com/solidjs/solid)
+- [<uim-twitter /> - twitter](https://twitter.com/solid_js)
+- [<uim-discord /> - discord](https://discord.com/invite/solidjs)
+- [<uim-github /> - github](https://github.com/solidjs/solid)
+- [<uim-youtube /> - youtube](https://www.youtube.com/channel/UCXsRnrbzIX8KHdf86PE241Q)
