@@ -12,7 +12,7 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 drawings:
-  persist: false
+  persist: true
 # use UnoCSS
 css: unocss
 colorSchema: dark
@@ -102,6 +102,7 @@ image: "/assets/rowell-heria-XFqzxqQja3g-unsplash.jpg"
 - Declarative
 - Performant (compared to .innerHTML)
 - Composable
+- SSR!
 
 </v-clicks>
 
