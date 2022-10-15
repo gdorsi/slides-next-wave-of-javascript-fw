@@ -44,6 +44,15 @@
   ) !important;
 }
 
+/* li dot */
+.solidjs-slides li::marker {
+  color: var(--solid-js-accent-primary);
+}
+
+.solidjs-slides .slidev-icon {
+  color: var(--solid-js-accent-primary);
+}
+
 .qwik-slides {
   background: yellow;
   color: black;

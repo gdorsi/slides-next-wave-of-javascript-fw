@@ -5,6 +5,64 @@ layout: cover
 <img src="/assets/solid-logo-full.svg"/>
 
 ---
+
+<style>
+  .solid-click-list {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+</style>
+
+# Familiar api for React developers
+
+<div class="solid-click-list">
+<v-click>
+
+- [useState](https://reactjs.org/docs/hooks-reference.html#usestate) <mdi-arrow-right /> [createSignal](https://www.solidjs.com/docs/latest/api#createsignal)
+
+</v-click>
+
+<v-click>
+
+- [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) <mdi-arrow-right /> [createEffect](https://www.solidjs.com/docs/latest/api#createeffect)
+
+</v-click>
+
+<v-click>
+
+- [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) <mdi-arrow-right /> [createMemo](https://www.solidjs.com/docs/latest/api#creatememo)
+
+</v-click>
+
+<v-click>
+
+- [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) <mdi-arrow-right /> [useContext](https://www.solidjs.com/docs/latest/api#usecontext)
+
+</v-click>
+
+
+<v-click>
+
+- [&lt;Suspense /&gt;](https://reactjs.org/docs/react-api.html#reactsuspense) <mdi-arrow-right /> [&lt;Suspense /&gt;](https://www.solidjs.com/docs/latest/api#suspense)
+
+</v-click>
+
+<v-click>
+
+- [useQuery/useSwr](https://swr.vercel.app/) <mdi-arrow-right /> [createResource](https://www.solidjs.com/docs/latest/api#createresource)
+
+</v-click>
+
+<v-click>
+
+- [and much more...](https://www.solidjs.com/docs/latest/api)
+
+</v-click>
+
+</div>
+--- 
 layout: two-cols
 ---
 
