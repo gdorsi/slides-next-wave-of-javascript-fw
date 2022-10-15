@@ -16,13 +16,14 @@ layout: two-cols
 ## React
 
 ```ts
-import * as React from 'react';
-
 function Counter() {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
 
   return (
-    <button style={btnStyle} type="button" onClick={() => setCount((n) => ++n)}>
+    <button
+      type="button" 
+      onClick={() => setCount((n) => ++n)}
+    >
       {count}
     </button>
   );
@@ -36,13 +37,14 @@ function Counter() {
 ## Solid
 
 ```ts
-import { createSignal } from "solid-js";
-
 function Counter() {
   const [count, setCount] = createSignal(0);
 
   return (
-    <button style={btnStyle} type="button" onClick={() => setCount((n) => ++n)}>
+    <button 
+      type="button" 
+      onClick={() => setCount((n) => ++n)}
+    >
       {count}
     </button>
   );
