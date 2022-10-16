@@ -167,3 +167,52 @@ class: qwik-slides
 ---
 
 # Conclusions
+
+
+---
+layout: two-cols
+---
+
+# Thank you!
+
+<div class="left-col-content">
+
+## Slides
+
+- [https://next-wave-fw-slides.netlify.app](https://next-wave-fw-slides.netlify.app)
+- [source](https://github.com/gdorsi/slides-next-wave-of-javascript-fw)
+
+
+## Demo apps
+
+- qwik [https://next-wave-fw-qwik.netlify.app/](https://next-wave-fw-qwik.netlify.app/)
+- react [https://next-wave-fw-react.netlify.app/](https://next-wave-fw-react.netlify.app/)
+- solid [https://next-wave-fw-solid.netlify.app/](https://next-wave-fw-solid.netlify.app/)
+- [source](https://github.com/FaberVitale/next-frameworks-sample-app/tree/qwik)
+
+</div>
+
+::right::
+
+<div class="slide-links">
+<img width="240" height="240" src="/assets/slides-url.svg" />
+</div>
+
+<style>
+h1 {
+  font-weight: 500;
+  margin-bottom: 3rem !important;
+}
+
+.slide-links {
+  padding: 4rem 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left-col-content {
+  font-size: 1rem;
+}
+</style>
