@@ -3,7 +3,7 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg
+background: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
 # apply any windi css classes to the current slide
 class: "text-center"
 # https://sli.dev/custom/highlighters.html
@@ -31,7 +31,7 @@ h1 {
 
 ---
 layout: image
-image: https://unsplash.com/photos/rCKIz0V7_Ok/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0OTc4MTY4&force=true&w=1920
+image: "/assets/brian-mcgowan-rCKIz0V7_Ok-unsplash.jpg"
 ---
 
 <h1 class="text-pic fixed">Once upon a time...</h1>
@@ -91,7 +91,7 @@ h2 {
 
 ---
 layout: image-right
-image: https://unsplash.com/photos/XFqzxqQja3g/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0OTc5MDM4&force=true&w=1920
+image: "/assets/rowell-heria-XFqzxqQja3g-unsplash.jpg"
 ---
 
 # The coming of React
@@ -106,14 +106,14 @@ image: https://unsplash.com/photos/XFqzxqQja3g/download?ixid=MnwxMjA3fDB8MXxhbGx
 
 ---
 layout: image
-image: https://unsplash.com/photos/layMbSJ3YOE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGNpdHl8ZW58MHx8fHwxNjY0OTc4OTAw&force=true&w=1920
+image: "/assets/jezael-melgoza-layMbSJ3YOE-unsplash.jpg"
 ---
 
 <h1 class="text-pic">Today</h1>
 
 ---
 layout: image-left
-image: https://unsplash.com/photos/E3wehabi_B4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8aGVhdnklMjBsaWZ0aW5nfGVufDB8fHx8MTY2NDkzNjMzNg&force=true&w=1920
+image: "/assets/alora-griffiths-E3wehabi_B4-unsplash.jpg"
 
 class: bg-yellow-300
 ---
@@ -130,7 +130,7 @@ class: bg-yellow-300
 
 ---
 layout: image
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg
+image: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
 ---
 
 <header class="fw-intro-header">
