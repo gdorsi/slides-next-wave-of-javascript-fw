@@ -455,15 +455,16 @@ npx degit solidjs/templates/ts my-solid-app
 
 <div style="padding-top: 2rem;" />
 
+## Rendering
+
+- Client-side rendering - [solid-router](https://github.com/solidjs/solid-router).
+- [Server-side rendering \*](https://www.solidjs.com/guides/server) 
+
 ## Guides
 
 - [List of available templates](https://github.com/solidjs/templates/blob/master/README.md#solid-templates-using-vite)
 - [Vite docs](https://vitejs.dev/)
 
-## Rendering
-
-- Client-side rendering - [solid-router](https://github.com/solidjs/solid-router).
-- [Server-side rendering \*](https://www.solidjs.com/guides/server) 
 </section>
 
 <div class="asterisk"> 
@@ -483,6 +484,13 @@ layout: two-cols
 ::right::
 
 <section style="padding: 2rem; ">
+
+
+```bash
+npm create astro@latest
+```
+
+<br />
 
 ## Rendering
 
