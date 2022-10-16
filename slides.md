@@ -19,21 +19,29 @@ css: unocss
 
 # The new wave of Javascript frameworks
 
-By Fabrizio A. Vitale & Guido D'Orsi
+<style>
+h1 {
+  font-weight: 500;
+  text-shadow: 4px 2px black;
+}
+</style>
+
+
+<p class="text-pic">By Fabrizio A. Vitale & Guido D'Orsi</p>
 
 ---
 layout: image
 image: https://unsplash.com/photos/rCKIz0V7_Ok/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0OTc4MTY4&force=true&w=1920
 ---
 
-# Once upon a time...
-
+<h1 class="text-pic fixed">Once upon a time...</h1>
 
 <style>
 h1 {
-  text-shadow: 1px 1px black;
+  right: 2rem;
 }
 </style>
+
 
 ---
 
@@ -101,13 +109,7 @@ layout: image
 image: https://unsplash.com/photos/layMbSJ3YOE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGNpdHl8ZW58MHx8fHwxNjY0OTc4OTAw&force=true&w=1920
 ---
 
-# Today
-
-<style>
-h1 {
-  text-shadow: 1px 1px black;
-}
-</style>
+<h1 class="text-pic">Today</h1>
 
 ---
 layout: image-left
@@ -131,18 +133,23 @@ layout: image
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg
 ---
 
-# The new wave of Javascript frameworks
-
-<v-click>
-
-## Solid.js & Qwik 
-
-</v-click>
-
+<header class="fw-intro-header">
+  <h1 class="text-pic fixed">The new wave of Javascript frameworks</h1>
+  
+  <v-click>
+    <h2 class="text-pic fixed">Solid.js & Qwik</h2> 
+  </v-click>
+</header>
 
 <style>
-h1, h2 {
-  text-shadow: 2px 1px black;
+.fw-intro-header.fw-intro-header h1 {
+  right: 1rem;
+  top: 3rem;
+}
+
+.fw-intro-header.fw-intro-header h2 {
+  right: 1rem;
+  top: 8rem;
 }
 </style>
 
