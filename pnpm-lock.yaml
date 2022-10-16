@@ -1,14 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify-json/uim': ^1.1.2
   '@slidev/cli': ^0.36.5
   '@slidev/theme-default': '*'
   '@slidev/theme-seriph': '*'
 
 dependencies:
-  '@slidev/cli': 0.36.5_postcss@8.4.17
+  '@slidev/cli': 0.36.5_postcss@8.4.16
   '@slidev/theme-default': 0.21.2
   '@slidev/theme-seriph': 0.21.3
+
+devDependencies:
+  '@iconify-json/uim': 1.1.2
 
 packages:
 
@@ -295,9 +299,14 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
+  /@iconify-json/uim/1.1.2:
+    resolution: {integrity: sha512-y30D/pUfqyIdKxIR+xOthDiQPSTRIM9cOy8PIOmeuTgh4Yc8gTwL8kWuoDenVxPhk0fXsRw16bn441PK6iuDTQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: false
 
   /@iconify/utils/2.0.0:
     resolution: {integrity: sha512-thvwZ6m3frWJiOYwRdHPSPGC25rmyvDl0vXdQ8ocRJZx31m8Pn4y7V1mTc5UReR6MiAj+hrV2UPZQjx7zI960g==}
@@ -450,7 +459,7 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@slidev/cli/0.36.5_postcss@8.4.17:
+  /@slidev/cli/0.36.5_postcss@8.4.16:
     resolution: {integrity: sha512-YiCDoIs6hbuQYd8nIkqo18brzdpsOzz/kPIqrxYm8EyIvHXIaOJ2sFpDSoAiQYxYJpG/Q+xpTRlvw+O154zWcw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -489,7 +498,7 @@ packages:
       nanoid: 4.0.0
       open: 8.4.0
       plantuml-encoder: 1.4.0
-      postcss-nested: 5.0.6_postcss@8.4.17
+      postcss-nested: 5.0.6_postcss@8.4.16
       prismjs: 1.29.0
       prompts: 2.4.2
       resolve: 1.22.1
@@ -2975,13 +2984,13 @@ packages:
     dev: false
     optional: true
 
-  /postcss-nested/5.0.6_postcss@8.4.17:
+  /postcss-nested/5.0.6_postcss@8.4.16:
     resolution: {integrity: sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.4.17
+      postcss: 8.4.16
       postcss-selector-parser: 6.0.10
     dev: false
 
@@ -2991,6 +3000,15 @@ packages:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
+    dev: false
+
+  /postcss/8.4.16:
+    resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
     dev: false
 
   /postcss/8.4.17:
