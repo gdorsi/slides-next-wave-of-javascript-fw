@@ -180,7 +180,7 @@ layout: two-cols
 ## Slides
 
 - [https://next-wave-fw-slides.netlify.app](https://next-wave-fw-slides.netlify.app)
-- [source](https://github.com/gdorsi/slides-next-wave-of-javascript-fw)
+- [<uim-github /> source](https://github.com/gdorsi/slides-next-wave-of-javascript-fw)
 
 
 ## Demo apps
@@ -188,8 +188,12 @@ layout: two-cols
 - qwik [https://next-wave-fw-qwik.netlify.app/](https://next-wave-fw-qwik.netlify.app/)
 - react [https://next-wave-fw-react.netlify.app/](https://next-wave-fw-react.netlify.app/)
 - solid [https://next-wave-fw-solid.netlify.app/](https://next-wave-fw-solid.netlify.app/)
-- [source](https://github.com/FaberVitale/next-frameworks-sample-app/tree/qwik)
+- [<uim-github /> source](https://github.com/FaberVitale/next-frameworks-sample-app)
 
+## Speakers
+
+- [Guido D'Orsi](https://github.com/gdorsi)
+- [Fabrizio Vitale](https://github.com/FaberVitale)
 </div>
 
 ::right::
@@ -200,8 +204,14 @@ layout: two-cols
 
 <style>
 h1 {
+  font-size: 3.5rem !important;
   font-weight: 500;
-  margin-bottom: 3rem !important;
+  margin-bottom: 2rem !important;
+}
+
+h2 {
+  margin-top: 2rem !important;
+  margin-bottom: 0.3rem;
 }
 
 .slide-links {
@@ -215,4 +225,5 @@ h1 {
 .left-col-content {
   font-size: 1rem;
 }
+
 </style>
