@@ -409,6 +409,25 @@ function Comp() {
 [playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr1oQAwmrhQI9QlNnzFKuhraehZWVjL0EMy4aI68TgqEABQAlPxWvA7Oru6eiSm8ALwAfGkQGRnMjgFwAHRqtADmiSrM2R6EKsmWZVJdoT1CuExlADwiaABuRYQYANYj+uNT3ZL9lRBkfBEwDBC4AIKEXgWCwmKMeanFvCPxnLz6RVi8IrTM9PB7NQ1wuACirk+uAAQvgAJIiZpgKBHToAQj6ECsZF+ABUOHAGLhEttdgcjs8ACwABlJiLAkgAukA)
 
 ---
+
+# Ecosystem | Libraries
+
+<div class="solidjs-click-list">
+<v-clicks>
+
+- [react-use](https://github.com/streamich/react-use) <mdi-arrow-right /> [solid-primitives](https://github.com/solidjs-community/solid-primitives)
+- [react-router](https://reactrouter.com/en/main) <mdi-arrow-right /> [solid-router](https://github.com/solidjs/solid-router)
+- [react-transition-group](https://reactcommunity.org/react-transition-group/) <mdi-arrow-right />  [solid-transition-group](https://github.com/solidjs/solid-transition-group)
+- [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) <mdi-arrow-right /> [solid-testing-library](https://github.com/solidjs/solid-testing-library)
+- [@tanstack/react-query](https://tanstack.com/query/v4/docs/adapters/react-query) <mdi-arrow-right /> [@tanstack/solid-query](https://tanstack.com/query/v4/docs/adapters/solid-query)
+- [@tanstak/react-table](https://tanstack.com/table/v8/docs/adapters/react-table) <mdi-arrow-right /> [@tanstack/solid-table](https://tanstack.com/table/v8/docs/adapters/solid-table)
+- [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) <mdi-arrow-right />  [solid-virtual](https://tanstack.com/virtual/v3/docs/adapters/solid-virtual)
+- [...and much more](https://www.npmjs.com/search?q=solidjs)
+
+</v-clicks>
+</div>
+
+---
 layout: two-cols
 ---
 
@@ -436,7 +455,7 @@ npx degit solidjs/templates/ts my-solid-app
 
 <div style="padding-top: 2rem;" />
 
-## Guide
+## Guides
 
 - [List of available templates](https://github.com/solidjs/templates/blob/master/README.md#solid-templates-using-vite)
 - [Vite docs](https://vitejs.dev/)
@@ -470,7 +489,7 @@ layout: two-cols
 - [SSG - island architecture](https://docs.astro.build/en/concepts/islands)
 - [SSR - node app o Edge functions](https://docs.astro.build/en/guides/server-side-rendering/)
 
-## Guide
+## Guides
 
 - [Getting started](https://docs.astro.build/en/getting-started/)
 - [Integrate Solid](https://docs.astro.build/en/guides/integrations-guide/solid-js/)
