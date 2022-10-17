@@ -12,7 +12,7 @@ highlighter: shiki
 lineNumbers: false
 # some information about the slides, markdown enabled
 drawings:
-  persist: true
+  persist: false
 # use UnoCSS
 css: unocss
 colorSchema: dark
@@ -169,6 +169,14 @@ class: qwik-slides
 
 # Conclusions
 
+## Qwik
+
+<v-clicks>
+
+- Blazing fast page loads ⚡
+- WIP 🚧
+
+</v-clicks>
 
 ---
 layout: two-cols

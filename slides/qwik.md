@@ -48,6 +48,14 @@ layout: cover
 
 # Islands Hydration (like Astro)
 
+<img src="/assets/hydration-click.png"/>
+
+---
+layout: cover
+---
+
+# Islands Hydration (like Astro)
+
 <img src="/assets/hydration-1.png"/>
 
 ---
@@ -72,7 +80,7 @@ layout: cover
 
 # Qwik (resumability)
 
-<img src="/assets/hydration-qwik-0.png"/>
+<img src="/assets/hydration-click.png"/>
 
 ---
 layout: cover
@@ -175,6 +183,8 @@ export const App_component_AkbU84a8zes = ()=>{
 </html>
 ```
 
+---
+layout: center
 --- 
 
 # [Demo Time!](https://next-wave-fw-qwik.netlify.app/?q=Javascript)
@@ -184,10 +194,12 @@ export const App_component_AkbU84a8zes = ()=>{
 # Is production ready?
 
 <v-clicks>
+
 - Meta-framework: Qwik City (supports both SSR and SSG)
 - It's still in alpha (they are still working on the core API)
 - You can easily find some bugs related to the rendering
 - The docs are barebone and there are many undocumented API
+
 </v-clicks>
 
 ---
@@ -199,7 +211,28 @@ Qwik is still young and requires alot of work to become stable.
 It's a huge opportunity to become a contributor!
 
 <v-clicks>
+
 - Open issues
 - Contribute to the documentation
 - Join discord and collaborate on the development!
+
 </v-clicks>
+
+
+---
+layout: image-right
+image: /assets/qwik-hero.jpeg
+
+---
+## Resources
+
+
+- [Tutorial](https://qwik.builder.io/tutorial/welcome/overview/)
+- [QWIK - Set of great demos by Misko Hevery](https://www.youtube.com/watch?v=7MgNMIPISY4)
+- [QWIK - Core developers training](https://www.youtube.com/watch?v=Mi7udzhcCDQ)
+
+## Community
+
+- [<uim-twitter /> - twitter](https://twitter.com/QwikDev)
+- [<uim-discord /> - discord](https://qwik.builder.io/chat)
+- [<uim-github /> - github](https://github.com/BuilderIO/qwik)
