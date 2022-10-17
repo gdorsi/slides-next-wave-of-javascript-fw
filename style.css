@@ -86,3 +86,7 @@
   font-size: 2.5rem;
   font-weight: 500;
 }
+
+.solidjs-gap-min {
+  gap: 0.55rem !important;
+}
