@@ -12,13 +12,14 @@ layout: two-cols
 <h1>What's SolidJS</h1>
 </header>
 
-Solid is a lightweight reactive library for building user interfaces. 
+<p class="no-margin">Solid is a lightweight and declarative reactive library for building user interfaces.</p>
 
-## Features
+<h2 class="no-margin">Features</h2>
 
 - JSX templating
 - Fine-grained reactivity model
 - Familiar api and DX for React developers
+- Unidirectional data flow
 - Client & Server side rendering
 - Typescript support
 - [Code-splitting - lazy(import(...))](https://www.solidjs.com/tutorial/async_lazy)
@@ -102,8 +103,8 @@ layout: center
 # Solid component
 
 ```typescript
-function Counter() {
-  const [count, setCount] = createSignal(0);
+function Counter(props) {
+  const [count, setCount] = createSignal(props.initialCount ?? 0);
 
   return (
     <button 
@@ -116,9 +117,11 @@ function Counter() {
 }
 ```
 
-A simple Solid component it's just a function that returns a [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+A standard Solid component it's just a function that:
+- returns a DOM [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
+- receives props from the parent component
+- runs **once** per instance, in other words, does not rerender
 
-that runs **once** per instance, in other words, does not rerender. 
 ---
 
 <style>
@@ -190,8 +193,8 @@ function createSignal(value) {
 }
 ```
 
-- subscribers are created with [createEffect](https://www.solidjs.com/docs/latest/api#createeffect), [createRenderEffect](https://www.solidjs.com/docs/latest/api#createrendereffect), createComponent etc...
-- observables are created with [createSignal](https://www.solidjs.com/docs/latest/api#createsignal), [createStore](https://www.solidjs.com/docs/latest/api#createstore), [createMemo](https://www.solidjs.com/docs/latest/api#creatememo), props etc...
+- subscribers are created with [createEffect](https://www.solidjs.com/docs/latest/api#createeffect), [createRenderEffect](https://www.solidjs.com/docs/latest/api#createrendereffect), [createMemo](https://www.solidjs.com/docs/latest/api#creatememo) etc...
+- observables are created with [createSignal](https://www.solidjs.com/docs/latest/api#createsignal), [createStore](https://www.solidjs.com/docs/latest/api#createstore), props etc...
 
 [reactivity guide](https://www.solidjs.com/guides/reactivity)
 

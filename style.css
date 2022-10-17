@@ -90,3 +90,7 @@
 .solidjs-gap-min {
   gap: 0.55rem !important;
 }
+
+.no-margin {
+  margin: 0 !important;
+}
