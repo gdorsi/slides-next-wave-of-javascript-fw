@@ -4,6 +4,37 @@ layout: cover
 
 <img src="/assets/solid-logo-full.svg"/>
 
+---
+layout: two-cols
+---
+
+<header>
+<h1>What's SolidJS</h1>
+</header>
+
+Solid is a lightweight reactive library for building user interfaces. 
+
+## Features
+
+- JSX templating
+- Fine-grained reactivity model
+- Familiar api and DX for React developers
+- Client & Server side rendering
+- Typescript support
+- [Code-splitting - lazy(import(...))](https://www.solidjs.com/tutorial/async_lazy)
+- [Suspense (render-as-you-fetch)](https://www.solidjs.com/tutorial/async_suspense)
+- [Transitions](https://www.solidjs.com/tutorial/async_transitions)
+
+::right::
+
+<img class="solid-logo" width="200" height="200" src="/assets/solid-logo.svg" />
+
+<style>
+  .solid-logo {
+    margin: 5rem auto 0;
+  }
+</style>   
+
 --- 
 layout: two-cols
 ---
@@ -23,7 +54,7 @@ layout: two-cols
 </style>
 
 <header>
-<h1>SolidJS is Performant</h1>
+<h1>SolidJS is fast</h1>
 </header>
 
 <div class="relative solid-perf-img-wrapper solid-js-bg2">
