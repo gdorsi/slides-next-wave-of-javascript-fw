@@ -7,7 +7,7 @@ specifiers:
   '@slidev/theme-seriph': '*'
 
 dependencies:
-  '@slidev/cli': 0.36.5_postcss@8.4.16
+  '@slidev/cli': 0.36.5_postcss@8.4.17
   '@slidev/theme-default': 0.21.2
   '@slidev/theme-seriph': 0.21.3
 
@@ -459,7 +459,7 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@slidev/cli/0.36.5_postcss@8.4.16:
+  /@slidev/cli/0.36.5_postcss@8.4.17:
     resolution: {integrity: sha512-YiCDoIs6hbuQYd8nIkqo18brzdpsOzz/kPIqrxYm8EyIvHXIaOJ2sFpDSoAiQYxYJpG/Q+xpTRlvw+O154zWcw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -498,7 +498,7 @@ packages:
       nanoid: 4.0.0
       open: 8.4.0
       plantuml-encoder: 1.4.0
-      postcss-nested: 5.0.6_postcss@8.4.16
+      postcss-nested: 5.0.6_postcss@8.4.17
       prismjs: 1.29.0
       prompts: 2.4.2
       resolve: 1.22.1
@@ -2984,13 +2984,13 @@ packages:
     dev: false
     optional: true
 
-  /postcss-nested/5.0.6_postcss@8.4.16:
+  /postcss-nested/5.0.6_postcss@8.4.17:
     resolution: {integrity: sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.4.16
+      postcss: 8.4.17
       postcss-selector-parser: 6.0.10
     dev: false
 
@@ -3000,15 +3000,6 @@ packages:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-    dev: false
-
-  /postcss/8.4.16:
-    resolution: {integrity: sha512-ipHE1XBvKzm5xI7hiHCZJCSugxvsdq2mPnsq5+UF+VHCjiBvtDrlxJfMBToWaP9D5XlgNmcFGqoHmUn0EYEaRQ==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.4
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
     dev: false
 
   /postcss/8.4.17:
