@@ -3,7 +3,7 @@
 theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg
+background: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
 # apply any windi css classes to the current slide
 class: "text-center"
 # https://sli.dev/custom/highlighters.html
@@ -20,21 +20,29 @@ colorSchema: dark
 
 # The new wave of Javascript frameworks
 
-By Fabrizio A. Vitale & Guido D'Orsi
+<style>
+h1 {
+  font-weight: 500;
+  text-shadow: 4px 2px black;
+}
+</style>
+
+
+<p class="text-pic">By Fabrizio A. Vitale & Guido D'Orsi</p>
 
 ---
 layout: image
-image: https://unsplash.com/photos/rCKIz0V7_Ok/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0OTc4MTY4&force=true&w=1920
+image: "/assets/brian-mcgowan-rCKIz0V7_Ok-unsplash.jpg"
 ---
 
-# Once upon a time...
-
+<h1 class="text-pic fixed">Once upon a time...</h1>
 
 <style>
 h1 {
-  text-shadow: 1px 1px black;
+  right: 2rem;
 }
 </style>
+
 
 ---
 
@@ -84,7 +92,7 @@ h2 {
 
 ---
 layout: image-right
-image: https://unsplash.com/photos/XFqzxqQja3g/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjY0OTc5MDM4&force=true&w=1920
+image: "/assets/rowell-heria-XFqzxqQja3g-unsplash.jpg"
 ---
 
 # The coming of React
@@ -99,20 +107,14 @@ image: https://unsplash.com/photos/XFqzxqQja3g/download?ixid=MnwxMjA3fDB8MXxhbGx
 
 ---
 layout: image
-image: https://unsplash.com/photos/layMbSJ3YOE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTV8fGNpdHl8ZW58MHx8fHwxNjY0OTc4OTAw&force=true&w=1920
+image: "/assets/jezael-melgoza-layMbSJ3YOE-unsplash.jpg"
 ---
 
-# Today
-
-<style>
-h1 {
-  text-shadow: 1px 1px black;
-}
-</style>
+<h1 class="text-pic">Today</h1>
 
 ---
 layout: image-left
-image: https://unsplash.com/photos/E3wehabi_B4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8aGVhdnklMjBsaWZ0aW5nfGVufDB8fHx8MTY2NDkzNjMzNg&force=true&w=1920
+image: "/assets/alora-griffiths-E3wehabi_B4-unsplash.jpg"
 
 class: bg-yellow-300
 ---
@@ -129,21 +131,26 @@ class: bg-yellow-300
 
 ---
 layout: image
-image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg
+image: "/assets/2560px-Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa.jpg"
 ---
 
-# The new wave of Javascript frameworks
-
-<v-click>
-
-## Solid.js & Qwik 
-
-</v-click>
-
+<header class="fw-intro-header">
+  <h1 class="text-pic fixed">The new wave of Javascript frameworks</h1>
+  
+  <v-click>
+    <h2 class="text-pic fixed">Solid.js & Qwik</h2> 
+  </v-click>
+</header>
 
 <style>
-h1, h2 {
-  text-shadow: 2px 1px black;
+.fw-intro-header.fw-intro-header h1 {
+  right: 1rem;
+  top: 3rem;
+}
+
+.fw-intro-header.fw-intro-header h2 {
+  right: 1rem;
+  top: 8rem;
 }
 </style>
 
@@ -160,3 +167,63 @@ class: qwik-slides
 ---
 
 # Conclusions
+
+
+---
+layout: two-cols
+---
+
+# Thank you!
+
+<div class="left-col-content">
+
+## Slides
+
+- [https://next-wave-fw-slides.netlify.app](https://next-wave-fw-slides.netlify.app)
+- [<uim-github /> source](https://github.com/gdorsi/slides-next-wave-of-javascript-fw)
+
+
+## Demo apps
+
+- qwik [https://next-wave-fw-qwik.netlify.app/](https://next-wave-fw-qwik.netlify.app/)
+- react [https://next-wave-fw-react.netlify.app/](https://next-wave-fw-react.netlify.app/)
+- solid [https://next-wave-fw-solid.netlify.app/](https://next-wave-fw-solid.netlify.app/)
+- [<uim-github /> source](https://github.com/FaberVitale/next-frameworks-sample-app)
+
+## Speakers
+
+- [Guido D'Orsi](https://github.com/gdorsi)
+- [Fabrizio Vitale](https://github.com/FaberVitale)
+</div>
+
+::right::
+
+<div class="slide-links">
+<img width="240" height="240" src="/assets/slides-url.svg" />
+</div>
+
+<style>
+h1 {
+  font-size: 3.5rem !important;
+  font-weight: 500;
+  margin-bottom: 2rem !important;
+}
+
+h2 {
+  margin-top: 2rem !important;
+  margin-bottom: 0.3rem;
+}
+
+.slide-links {
+  padding: 4rem 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left-col-content {
+  font-size: 1rem;
+}
+
+</style>
