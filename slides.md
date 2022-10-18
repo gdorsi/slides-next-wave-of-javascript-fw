@@ -175,6 +175,7 @@ class: qwik-slides
 
 - Blazing fast page loads ⚡
 - WIP 🚧
+- All the closures must be serializable
 
 </v-clicks>
 
