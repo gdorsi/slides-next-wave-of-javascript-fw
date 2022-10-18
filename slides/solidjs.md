@@ -202,6 +202,12 @@ function Sum() {
 [reactivity guide](https://www.solidjs.com/guides/reactivity)
 
 ---
+layout: center
+---
+
+# Side by side API comparison
+
+---
 
 # Familiar api for React developers
 
