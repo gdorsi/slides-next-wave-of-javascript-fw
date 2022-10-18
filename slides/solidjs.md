@@ -106,12 +106,13 @@ layout: center
 function Counter(props) {
   const [count, setCount] = createSignal(props.initialCount ?? 0);
 
+  createEffect(() => {
+    console.log(`count ${count()}`);
+  });
+
   return (
-    <button 
-      type="button" 
-      onClick={() => setCount((n) => ++n)}
-    >
-      {count}
+    <button type="button" onClick={() => setCount((n) => ++n)}>
+      {count()}
     </button>
   );
 }
@@ -121,6 +122,8 @@ A standard Solid component it's just a function that:
 - returns a DOM [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - receives props from the parent component
 - runs **once** per instance, in other words, does not rerender
+
+[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqsDpy4BRGRk4Zj5pOQVlVQ1tPQsrKxl6CDC0WgheAGEGCBdGAApCeUIyAEp+K14HDLI+YGZc3F8yOFwclNwAXV4AXj84ZzdPbyKSsgA6DDRcNCg1DrzeAH5l3gAGMssIKoGhoJCwgoKK3oA+Sszqmog6NTgJtVoPAoADRs7eABIQD7yTySvLa7STAnZXIS4JiZAq7aoAHhM9FwuAyvAIxF6KiRKIyKl4GSyGmYAGteiATn0Lq12k1jhBThcANRMhmSM5w66-OllSSc+H6HGoiAcq5gvngoSicTHRm8eGLfK8fRnXwiWjMejwPITDxtAL3bW4ABC+AAkiJYWAoIRCCoygBCMHqzVGiYmWgifATOr4e4TGQZXDuABecD60QAHAAWQgUBKYSRdIA)
 
 ---
 
