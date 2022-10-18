@@ -102,3 +102,7 @@
 .qwik-slides.demo {
     grid-template-columns: 200px 1fr;
 }
+
+.solidjs-slides strong {
+  color: var(--solid-js-accent-primary);
+}

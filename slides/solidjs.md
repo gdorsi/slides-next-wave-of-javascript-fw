@@ -124,7 +124,7 @@ A standard Solid component it's just a function that:
 
 <div class="relative" style="padding: 2.5rem 1rem 1rem">
   <div class="absolute react-recon-count">
-    count: <s>7</s>=><strong>8</strong>
+    count: <s>7</s>=><strong style="color: inherit;">8</strong>
   </div>
   <pre><code class="absolute react-recon-pos">setCount(n => n + 1);</code></pre>
  <img src="/assets/react-reconciliation.svg" alt="react reconciliation" />
@@ -148,37 +148,56 @@ A standard Solid component it's just a function that:
 <h1 class="absolute">SolidJS update</h1>
 <div class="relative" style="padding: 2.5rem 1rem 1rem">
   <div class="absolute react-recon-count">
-    count: <s>7</s>=><strong>8</strong>
+    count: <s>7</s>=><strong style="color: inherit;">8</strong>
   </div>
   <pre><code class="absolute react-recon-pos">setCount(n => n + 1);</code></pre>
  <img src="/assets/solidjs-update.svg" alt="react reconciliation" />
 </div>
 
+
 ---
 
-# Fine-Grained reactivity
+# Automatic dependency tracking
 
-```typescript
-function createSignal(value) {
-  const subscribers = new Set();
+```typescript {all|2,5-7,12|3,5-7,15}
+function Sum() {
+  const [a, setA] = createSignal(0);
+  const [b, setB] = createSignal(0);
 
-  const read = () => {
-    const listener = getCurrentListener(); // component, createEffect etc...
-    if (listener) subscribers.add(listener);
-    return value;
-  };
+  createEffect(() => {
+    console.log(`a + b = ${a() + b()}`);
+  });
 
-  const write = (nextValue) => {
-    value = nextValue;
-    for (const sub of subscribers) sub.run();
-  };
-
-  return [read, write];
+  return (
+    <>
+      <button type="button" onClick={() => setA((n) => ++n)}>
+        a + 1 ({a()})
+      </button>
+      <button type="button" onClick={() => setB((n) => ++n)}>
+        b + 1 ({(b())})
+      </button>
+    </>
+  );
 }
 ```
 
-- subscribers are created with [createEffect](https://www.solidjs.com/docs/latest/api#createeffect), [createRenderEffect](https://www.solidjs.com/docs/latest/api#createrendereffect), [createMemo](https://www.solidjs.com/docs/latest/api#creatememo) etc...
-- observables are created with [createSignal](https://www.solidjs.com/docs/latest/api#createsignal), [createStore](https://www.solidjs.com/docs/latest/api#createstore), props etc...
+[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqsDpy4BRGRk4Zj5pOQVlVQ1tPQsrKxl6CDC0WgheV3oYAAoASn4rXgcMsj5gKF8yOFwAQQBdXgBePzhnN09vXIAGfMtM0ohy3mATatqAISbWx3aXdy8oNV7+xMG5jqCQsNyCloA+IsGS5jL1OAA6NVoPXIADKF4Aal4TFt4AEhAofdeTAqSe5rQaSEHFQS1JiZXIQkoAHgOcJKvHhJnouFwGV4BGIzRU6MxGRUvAyAGENMwANbNED7ZpHGr1PYQQoMl7PVmSJEnFElJ6vACMvFyP0B+WRCP0hKxEB5fIRMuxuLg+LASogJPJlJpdLZjKmLP1HK58oVJXeQpFdIB+XyYMlqOlGNlZr58MIboVIEeLzeH2+v0K-0B90kA3N8P0nuRUbNIMk6yEonEe2N8Oyin0B18IlozBywlwlw8tQCajg8AguEm+AAkiJYWAoIRCCp8gBCcGifOF6uXEy0ET4S7lfAVy4yDK4dwALzgHxUABYAByECgJTCSBpAA) - [reactivity guide](https://www.solidjs.com/guides/reactivity)
+
+---
+
+
+# Fine-Grained reactivity
+
+<div class="solidjs-click-list pt-6 pb-6">
+<v-clicks>
+
+- Signals are **observables** that notify whenever their value changes.
+- Effects are automatically **subscribed** to signals they read.
+- Before an Effect executes (or re-executes) it is marked as **current listener**.
+- Any Signal that is read adds the **current listener** to its subscribers. 
+
+</v-clicks>
+</div>
 
 [reactivity guide](https://www.solidjs.com/guides/reactivity)
 
@@ -239,7 +258,7 @@ function Counter() {
       type="button" 
       onClick={() => setCount((n) => ++n)}
     >
-      {count}
+      {count()}
     </button>
   );
 }
