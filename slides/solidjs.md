@@ -81,15 +81,13 @@ layout: two-cols
 
 # Familiar api for React developers
 
-<div class="solidjs-click-list">
+<div class="solidjs-click-list solidjs-gap-max">
 <v-clicks>
 
 - [useState](https://reactjs.org/docs/hooks-reference.html#usestate) <mdi-arrow-right /> [createSignal](https://www.solidjs.com/docs/latest/api#createsignal)
 - [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) <mdi-arrow-right /> [createEffect](https://www.solidjs.com/docs/latest/api#createeffect)
 - [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) <mdi-arrow-right /> [createMemo](https://www.solidjs.com/docs/latest/api#creatememo)
 - [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) <mdi-arrow-right /> [useContext](https://www.solidjs.com/docs/latest/api#usecontext)
-- [&lt;Suspense /&gt;](https://reactjs.org/docs/react-api.html#reactsuspense) <mdi-arrow-right /> [&lt;Suspense /&gt;](https://www.solidjs.com/docs/latest/api#suspense)
-- [useQuery/useSwr](https://swr.vercel.app/) <mdi-arrow-right /> [createResource](https://www.solidjs.com/docs/latest/api#createresource)
 - [and much more...](https://www.solidjs.com/docs/latest/api)
 
 </v-clicks>

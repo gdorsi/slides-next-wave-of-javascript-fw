@@ -91,6 +91,10 @@
   gap: 0.55rem !important;
 }
 
+.solidjs-gap-max {
+  gap: 2rem !important;
+}
+
 .no-margin {
   margin: 0 !important;
 }
