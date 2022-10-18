@@ -63,8 +63,8 @@ layout: two-cols
 </div>
 
 ::right::
-<div class="solidjs-click-list">
 
+<div class="solidjs-click-list">
 <v-clicks>
 
 - It's **just** [7.3KB min+gzip](https://bundlephobia.com/package/solid-js@1.5.1).
@@ -73,9 +73,57 @@ layout: two-cols
 - No Virtual Dom, [components render once](https://www.solidjs.com/guides/reactivity).
 
 </v-clicks>
+</div>
 
+---
+layout: two-cols
+---
+
+<header>
+<h1>Smaller bundles | A demo app</h1>
+</header>
+
+<div class="mt-5 side-blocks">
+
+## React 
+
+```bash {4}
+[...]
+index.html                1.58 KiB
+assets/index.f8c30131.css 51.87 KiB / gzip: 10.26 KiB
+assets/index.d60afae4.js  141.33 KiB / gzip: 45.79 KiB
+```
+
+- [website](https://next-wave-fw-react.netlify.app?q=Javascript)
+- [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/8a88dfa74d9e12076d120807f79317fd45445cbc/src/App.tsx)
 
 </div>
+
+::right::
+
+<div class="mt-5 side-blocks">
+
+## SolidJS
+
+```bash {4}
+[...]
+index.html                1.58 KiB
+assets/index.f8c30131.css 51.87 KiB / gzip: 10.26 KiB
+assets/index.54c59109.js  13.62 KiB / gzip: 5.75 KiB
+```
+
+- [website](https://next-wave-fw-solid.netlify.app?q=Javascript)
+- [<uim-github /> - source](https://github.com/FaberVitale/next-frameworks-sample-app/blob/b79aa7c06c09d888d91e2edbb1f023cfff99323a/src/App.tsx)
+
+</div>
+
+<style>
+  .side-blocks {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1.5rem;
+  }
+</style>
 
 ---
 layout: center
