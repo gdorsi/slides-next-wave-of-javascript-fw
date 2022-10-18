@@ -449,19 +449,16 @@ function Comp() {
 
 # Ecosystem | Libraries
 
-<div class="solidjs-click-list solidjs-gap-min">
-<v-clicks>
+<div class="solidjs-click-list">
 
 - [react-use](https://github.com/streamich/react-use) <mdi-arrow-right /> [solid-primitives](https://github.com/solidjs-community/solid-primitives)
 - [react-router](https://reactrouter.com/en/main) <mdi-arrow-right /> [solid-router](https://github.com/solidjs/solid-router)
 - [react-transition-group](https://reactcommunity.org/react-transition-group/) <mdi-arrow-right />  [solid-transition-group](https://github.com/solidjs/solid-transition-group)
 - [react-testing-library](https://testing-library.com/docs/react-testing-library/intro/) <mdi-arrow-right /> [solid-testing-library](https://github.com/solidjs/solid-testing-library)
 - [@tanstack/react-query](https://tanstack.com/query/v4/docs/adapters/react-query) <mdi-arrow-right /> [@tanstack/solid-query](https://tanstack.com/query/v4/docs/adapters/solid-query)
-- [@tanstak/react-table](https://tanstack.com/table/v8/docs/adapters/react-table) <mdi-arrow-right /> [@tanstack/solid-table](https://tanstack.com/table/v8/docs/adapters/solid-table)
-- [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) <mdi-arrow-right />  [@tanstak/solid-virtual](https://tanstack.com/virtual/v3/docs/adapters/solid-virtual)
+- [react-window](https://react-window.vercel.app/#/examples/list/fixed-size) <mdi-arrow-right />  [@tanstack/solid-virtual](https://tanstack.com/virtual/v3/docs/adapters/solid-virtual)
 - [...and much more](https://www.npmjs.com/search?q=solidjs)
 
-</v-clicks>
 </div>
 
 ---
