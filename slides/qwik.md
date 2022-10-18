@@ -5,10 +5,10 @@ layout: cover
 <img src="/assets/qwik.png"/>
 
 ---
-layout: section
+layout: cover
 ---
 
-# No Hydration?!?
+<img src="/assets/qwik-nohydration.png"/>
 
 ---
 layout: cover
@@ -48,7 +48,7 @@ layout: cover
 
 # Islands Hydration (like Astro)
 
-<img src="/assets/hydration-click.png"/>
+<img src="/assets/hydration-1.png"/>
 
 ---
 layout: cover
@@ -56,7 +56,7 @@ layout: cover
 
 # Islands Hydration (like Astro)
 
-<img src="/assets/hydration-1.png"/>
+<img src="/assets/hydration-click.png"/>
 
 ---
 layout: cover
@@ -156,7 +156,7 @@ export const App_component_AkbU84a8zes = ()=>{
 
 ## Auto lazy loading! - Resuming
 
-```html {all|8-12,15-17}
+```html {all|8-12,15-17|18-23}
 <!DOCTYPE html>
 <html q:container="paused" q:version="0.11.0" q:render="ssr" q:base="/repl/21uldbnhtl3/build/">
   <html>
