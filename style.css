@@ -1,6 +1,72 @@
+:root {
+  --solid-js-primary: #2c4f7c;
+  --solid-js-secondary: #335d92;
+  --solid-js-light: #446b9e;
+  --solid-js-accent-primary: #66e6ac;
+  --solid-js-accent-secondary: #0CDC73;
+}
+
 .solidjs-slides {
-    background: blue;
-    color: white
+  --tw-gradient-from: rgb(79 136 198 / 0.4);
+  --tw-gradient-to: rgb(68 107 158 / 0.9);
+  --two-columns-guttter: 20px;
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(68 107 158 / 0.8),
+    var(--tw-gradient-to);
+  color: white;
+  background-color: #0a1219; /* match picture background. */
+}
+
+.two-columns .solidjs-slides header {
+  position: absolute;
+  left: 3.5rem;
+  top: 2.5rem;
+}
+
+.two-columns .solidjs-slides.col-left,
+.two-columns .solidjs-slides.col-right {
+  padding: 60px 0 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+}
+
+.two-columns .solidjs-slides.col-left {
+  padding-right: calc(var(--two-columns-guttter) / 2);
+}
+
+.two-columns .solidjs-slides.col-right {
+  padding-left: calc(var(--two-columns-guttter) / 2);
+}
+
+.solidjs-bg1 {
+  background-image: linear-gradient(
+    to left,
+    var(--tw-gradient-stops)
+  ) !important;
+}
+
+.solid-js-bg2 {
+  background: #010205 !important;
+}
+
+.solidjs-click-list {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.solidjs-click-list > ul {
+  display: contents;
+}
+
+/* li dot */
+.solidjs-slides li::marker {
+  color: var(--solid-js-accent-primary);
+}
+
+.solidjs-slides .slidev-icon {
+  color: var(--solid-js-accent-primary);
 }
 
 .qwik-slides {
@@ -16,6 +82,27 @@
   border-radius: 8px;
 }
 
+.slidev-layout h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.solidjs-gap-min {
+  gap: 0.55rem !important;
+}
+
+.solidjs-gap-max {
+  gap: 2rem !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
 .qwik-slides.demo {
     grid-template-columns: 200px 1fr;
+}
+
+.solidjs-slides strong {
+  color: var(--solid-js-accent-primary);
 }
