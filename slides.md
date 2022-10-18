@@ -102,6 +102,7 @@ image: "/assets/rowell-heria-XFqzxqQja3g-unsplash.jpg"
 - Declarative
 - Performant (compared to .innerHTML)
 - Composable
+- SSR!
 
 </v-clicks>
 
@@ -168,6 +169,14 @@ class: qwik-slides
 
 # Conclusions
 
+## Qwik
+
+<v-clicks>
+
+- Blazing fast page loads ⚡
+- WIP 🚧
+
+</v-clicks>
 
 ---
 layout: two-cols

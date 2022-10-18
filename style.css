@@ -70,8 +70,8 @@
 }
 
 .qwik-slides {
-  background: yellow;
-  color: black;
+    background: white;
+    color: black
 }
 
 .text-pic {
@@ -93,4 +93,8 @@
 
 .no-margin {
   margin: 0 !important;
+}
+
+.qwik-slides.demo {
+    grid-template-columns: 200px 1fr;
 }
