@@ -31,20 +31,6 @@ h1 {
 <p class="text-pic">By Fabrizio A. Vitale & Guido D'Orsi</p>
 
 ---
-layout: image
-image: "/assets/brian-mcgowan-rCKIz0V7_Ok-unsplash.jpg"
----
-
-<h1 class="text-pic fixed">Once upon a time...</h1>
-
-<style>
-h1 {
-  right: 2rem;
-}
-</style>
-
-
----
 
 # The first rise of the Javascript frameworks
 
@@ -175,6 +161,7 @@ class: qwik-slides
 
 - Blazing fast page loads ⚡
 - WIP 🚧
+- All the closures must be serializable
 
 </v-clicks>
 
