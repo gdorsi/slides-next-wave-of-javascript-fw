@@ -100,7 +100,7 @@ layout: cover
 
 ## Auto lazy loading!
 
-```js
+```js {all|3,7|all}
 import { component$ } from '@builder.io/qwik';
 
 export const App = component$(() => {
@@ -156,7 +156,7 @@ export const App_component_AkbU84a8zes = ()=>{
 
 ## Auto lazy loading! - Resuming
 
-```html {all|8-12,15-17|18-23}
+```html {all|8-12,15-17|18-23|all}
 <!DOCTYPE html>
 <html q:container="paused" q:version="0.11.0" q:render="ssr" q:base="/repl/21uldbnhtl3/build/">
   <html>
@@ -198,7 +198,6 @@ layout: center
 - Meta-framework: Qwik City (supports both SSR and SSG)
 - It's still in alpha (they are still working on the core API)
 - You can easily find some bugs related to the rendering
-- The docs are barebone and there are many undocumented API
 
 </v-clicks>
 

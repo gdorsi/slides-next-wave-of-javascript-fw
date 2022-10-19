@@ -111,8 +111,8 @@ class: bg-yellow-300
 <v-clicks>
 
 - Too many renders issue
-- Hydration times
 - Lack of standards
+- Hydration times
 
 </v-clicks>
 
