@@ -9,7 +9,7 @@ layout: two-cols
 ---
 
 <header>
-<h1>What's SolidJS</h1>
+<h1>What's SolidJS?</h1>
 </header>
 
 <p class="no-margin">Solid is a lightweight and declarative reactive library for building user interfaces.</p>
@@ -17,6 +17,7 @@ layout: two-cols
 <h2 class="no-margin">Features</h2>
 
 - JSX templating
+- Component based
 - Fine-grained reactivity model
 - Familiar api and DX for React developers
 - Unidirectional data flow
@@ -152,7 +153,7 @@ A standard Solid component it's just a function that:
 - receives props from the parent component
 - runs **once** per instance, in other words, does not rerender
 
-[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqsDpy4BRGRk4Zj5pOQVlVQ1tPQsrKxl6CDC0WgheAGEGCBdGAApCeUIyAEp+K14HDLI+YGZc3F8yOFwclNwAXV4AXj84ZzdPbyKSsgA6DDRcNCg1DrzeAH5l3gAGMssIKoGhoJCwgoKK3oA+Sszqmog6NTgJtVoPAoADRs7eABIQD7yTySvLa7STAnZXIS4JiZAq7aoAHhM9FwuAyvAIxF6KiRKIyKl4GSyGmYAGteiATn0Lq12k1jhBThcANRMhmSM5w66-OllSSc+H6HGoiAcq5gvngoSicTHRm8eGLfK8fRnXwiWjMejwPITDxtAL3bW4ABC+AAkiJYWAoIRCCoygBCMHqzVGiYmWgifATOr4e4TGQZXDuABecD60QAHAAWQgUBKYSRdIA)
+[playground](https://playground.solidjs.com/?version=1.4.1#NobwRAdghgtgpmAXGGUCWEwBowBcCeADgsrgM4Ae2YZA9gK4BOAxiWGjIbY7gAQi9GcCABM4jXgF9eAM0a0YvADo1aAGzQiAtACsyAegDucAEYqA3EogcuPfr2ZCouOAGU0Ac2hqps+YpU6DW09CysrZloIMj5ItW4yXgBeXmAVSMYIGXjjRhM1ejgVLGUwQgwAa2LSwiZCNSLsUrI0NQA3cRUAXUsIBtj1bgBJEQpk3gAGXqsZeghmXDQo3gBhBggXRgAKQnlCMgBKfiteByiY1Mi53BKyOFw1667xxzhnN09vHb2yADoMNCLKBqR4bXgAfnBkwO0wgpxEtGY9HgG1+JloInwvxi+AaaKgzAqHnkcxEL0GjDIwDiw1GPROvAA1IyaYwRhRYadItF1HBfvEPFsQAyuRT2VgRbwTB41vFGIheAikSjcGiMVicXiTASiSTRBK4VIYeFDUJcEw4VtJQAeEz0XC4ZYEYhJFR2h1RFS8KIrDSEpIgLZHJIAPl4dwe61wWy2EGDYeZcckIclpxAVw2QckNv07sdEBThuNEGzECsQlE4hj8d41tBm14+hDJSVyOEqo89wAog0VQAhfAjK1gKCEQgqA4AQmLrZVasx2IIeJkUVw7gAXnBxioAIwAJgmhAoYUwki6QA)
 
 ---
 
