@@ -9,7 +9,7 @@ layout: two-cols
 ---
 
 <header>
-<h1>What's SolidJS</h1>
+<h1>What's SolidJS?</h1>
 </header>
 
 <p class="no-margin">Solid is a lightweight and declarative reactive library for building user interfaces.</p>
@@ -17,6 +17,7 @@ layout: two-cols
 <h2 class="no-margin">Features</h2>
 
 - JSX templating
+- Component based
 - Fine-grained reactivity model
 - Familiar api and DX for React developers
 - Unidirectional data flow
